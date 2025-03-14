@@ -1,0 +1,35 @@
+{{define "HEADER"}}
+<!DOCTYPE html>
+<html lang="en" class="h-screen">
+    <head>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width,initial-scale=1"/>
+            <title>{{.Title}}</title>
+            <link href="/static/css/byu-pico.css" rel="stylesheet"/>
+            <link href="/static/css/main.css" rel="stylesheet"/>
+            <script src="/static/js/htmx.min.js"></script>
+            <script async src="https://cdn.byu.edu/byu-theme-components/2.x.x/byu-theme-components.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.byu.edu/byu-theme-components/2.x.x/byu-theme-components.min.css" media="all">
+            <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+    </head>
+    <body>
+        <byu-header>
+            <h2 slot="site-title">{{.PageName}}</h2>
+            {{with .Nav}}
+                <byu-menu slot="nav" collapsed>
+                    {{range .}}
+                        <a href="{{.Location}}">{{.Text}}</a>
+                    {{end}}
+                </byu-menu>
+            {{end}}
+        </byu-header>
+        <main id="contents" class="pico container">
+{{end}}
+
+{{define "FOOTER"}}
+        </main>
+        <byu-footer></byu-footer>
+    </body>
+</html>
+{{end}}
