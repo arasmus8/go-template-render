@@ -1,0 +1,29 @@
+2025/03/14 09:51:42 main.go:46: Running on 8080
+2025/03/14 09:51:42 build.go:107: Directory: .
+2025/03/14 09:51:42 build.go:107: Directory: css
+2025/03/14 09:51:42 build.go:109: File: css/byu-pico.css
+2025/03/14 09:51:42 build.go:109: File: css/byu-pico.css.map
+2025/03/14 09:51:42 build.go:109: File: css/main.css
+2025/03/14 09:51:42 build.go:107: Directory: images
+2025/03/14 09:51:42 build.go:109: File: images/favicon-16x16.png
+2025/03/14 09:51:42 build.go:109: File: images/favicon-32x32.png
+2025/03/14 09:51:42 build.go:107: Directory: js
+2025/03/14 09:51:42 build.go:109: File: js/htmx.min.js
+2025/03/14 09:51:46 routes.go:45: Health endpoint accessed
+2025/03/14 09:51:46 build.go:50: In renderShellPart function
+2025/03/14 09:51:46 build.go:51: %o&{HEADER 0x7621e0}
+2025/03/14 09:51:46 build.go:33: Providing static data: {%!o(string=Health Check) %!o(string=Health Check) 0 0}
+2025/03/14 09:51:46 build.go:50: In renderShellPart function
+2025/03/14 09:51:46 build.go:51: %o&{FOOTER 0x761880}
+2025/03/14 09:51:46 build.go:33: Providing static data: %!o(<nil>)
+2025/04/01 14:27:37 main.go:46: Running on 8080
+2025/04/01 14:27:37 build.go:107: Directory: .
+2025/04/01 14:27:37 build.go:107: Directory: css
+2025/04/01 14:27:37 build.go:109: File: css/byu-pico.css
+2025/04/01 14:27:37 build.go:109: File: css/byu-pico.css.map
+2025/04/01 14:27:37 build.go:109: File: css/main.css
+2025/04/01 14:27:37 build.go:107: Directory: images
+2025/04/01 14:27:37 build.go:109: File: images/favicon-16x16.png
+2025/04/01 14:27:37 build.go:109: File: images/favicon-32x32.png
+2025/04/01 14:27:37 build.go:107: Directory: js
+2025/04/01 14:27:37 build.go:109: File: js/htmx.min.js

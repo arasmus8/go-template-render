@@ -5,6 +5,7 @@ import (
 	"io/fs"
 	"log"
 	"net/http"
+	"os"
 
 	"src/shell/assets"
 )
@@ -119,4 +120,19 @@ func Initialize(mux *http.ServeMux) error {
 	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServerFS(assets.Static)))
 
 	return nil
+}
+
+func Test() {
+	t, _ := template.New("t").Parse(`
+	<html>
+		<head>
+			<title>Rendered Template</title>
+		</head>
+		<body>
+			<h1>Rendered Template</h1>
+		</body>
+	</html>
+	`)
+	data := make(map[string]string)
+	t.Execute(os.Stdout, data)
 }
